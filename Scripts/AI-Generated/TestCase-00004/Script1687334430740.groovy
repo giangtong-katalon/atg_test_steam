@@ -13,7 +13,7 @@ WebUI.navigateToUrl(GlobalVariable.application_domain + '/adminLogin')
 
 'step 2: Add visual checkpoint at Page_adminLogin'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TestCase-00005_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TestCase-00004_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

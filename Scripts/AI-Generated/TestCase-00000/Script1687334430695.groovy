@@ -1,8 +1,8 @@
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.model.FailureHandling
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 'Initialize test session: Open browser and set view port'
 
@@ -28,7 +28,21 @@ WS.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain +'/(?:#.*)?(?:\
 
 WebUI.enhancedClick(testObj)
 
-'step 3: Add visual checkpoint at Page_cart'
+'step 3: At Page_cart click on button_object --> navigate to Page_login'
+
+testObj = findTestObject('Object Repository/Page_cart/button_object_1')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WS.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain +'/cart(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.enhancedClick(testObj)
+
+'step 4: Add visual checkpoint at Page_login'
 
 WebUI.takeFullPageScreenshotAsCheckpoint('TestCase-00000_visual_checkpoint')
 
