@@ -15,7 +15,7 @@ WebUI.navigateToUrl(GlobalVariable.application_domain + '/en-us')
 
 'step 2: Add visual checkpoint at Page en-us'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Page En Us successfully navigated_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Page En Us successfully loaded_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
