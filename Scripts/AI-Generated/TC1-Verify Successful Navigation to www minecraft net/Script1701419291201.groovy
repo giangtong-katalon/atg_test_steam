@@ -15,7 +15,7 @@ WebUI.navigateToUrl(GlobalVariable.application_domain + '')
 
 'step 2: Add visual checkpoint at Page www minecraft net'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Minecraft net page loads successfully_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Navigation to www minecraft net_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
