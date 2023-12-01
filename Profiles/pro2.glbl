@@ -12,11 +12,11 @@
     </GlobalVariableEntity>
     <GlobalVariableEntity>
         <description></description>
-        <initValue>'https://www.minecraft.net'</initValue>
+        <initValue>'https://www.minecraft.net/en-us'</initValue>
         <name>application_domain</name>
     </GlobalVariableEntity>
-    <defaultProfile>False</defaultProfile>
+    <defaultProfile>True</defaultProfile>
     <description></description>
-    <name>pro</name>
+    <name>pro2</name>
     <tag></tag>
 </GlobalVariableEntities>

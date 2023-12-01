@@ -9,13 +9,13 @@ def setup() {
 	WebUI.setViewPortSize(1920, 1080)	
 }
 
-'step 1: Navigate to Page www minecraft net'
+'step 1: Navigate to Page en-us'
 
-WebUI.navigateToUrl(GlobalVariable.application_domain + '')
+WebUI.navigateToUrl(GlobalVariable.application_domain + '/en-us')
 
-'step 2: Add visual checkpoint at Page www minecraft net'
+'step 2: Add visual checkpoint at Page en-us'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Navigation to www minecraft net_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Page En Us successfully navigated_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
